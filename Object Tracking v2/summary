@@ -1,0 +1,3 @@
+- tracker/detector breaks when camera moves
+- the detector does detect things that are not cars, which messes up the overall count of vehicles
+- some vehicles are not detected
