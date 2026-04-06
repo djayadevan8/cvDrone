@@ -1,1 +1,2 @@
-
+- YOLO based vehicle detection
+- detects various types of vehicles and only displays bounding boxes if confidence threshold is met
