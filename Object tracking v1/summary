@@ -1,0 +1,2 @@
+- Tracks vehicles pretty well; misses a few cars (not seen well in thresholded mask) 
+- Detection breaks when camera moves; other objects are detected as cars
