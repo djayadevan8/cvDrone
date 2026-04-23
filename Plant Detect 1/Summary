@@ -1,1 +1,12 @@
+1. I labeled the dataset using Label Studio, following this tutorial -- https://youtu.be/r0RspiLG260. 
+- I labeled the train track region using 1 big bounding box. 
+- I labeled various vegetation levels -- no vegetation (just track photos), some vegetation, heavy vegetation. 
+I included the track shape outline photos as well. 
+- What was the black/yellow thing for, detecting track shape?
 
+2. I trained the model using the code in the tutorial in step 1. Results are in the 'val_batch0_pred.jpg' file. 
+
+3. I exported the trained YOLO model to my laptop (you can find it in (Plant Detect 1/Model 1). 
+- I tested this model on VideoA --> seemed okay. Can detect some vegetation. 
+- I expected it to detect the vegetation on the tracks but it couldn't. It mostly detected large plants outside of track area. 
+- May be because of the small dataset size, or because I also labeled the plants outside of the track boundaries?  
