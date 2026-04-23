@@ -6,7 +6,8 @@
 2. I trained the model using the code in the tutorial in step 1. Results are in the 'val_batch0_pred.jpg' file in the Model 1 Training and Prediction folder. 
 
 3. I exported the trained YOLO model to my laptop (you can find it in (Plant Detect 1/Model 1). 
-- I tested this model on VideoA --> seemed okay. Can detect some vegetation. 
+- Got a test video (https://www.pexels.com/video/a-train-tracks-with-a-power-line-and-grass-27315436/)
+- I tested this model on Test video --> seemed okay. Can detect some vegetation. 
 - I expected it to detect the vegetation on the tracks but it couldn't. It mostly detected large plants outside of track area. 
 - May be because of the small dataset size, or because I also labeled the plants outside of the track boundaries? 
 - Maybe I should make new model without including the track outline photos. 
