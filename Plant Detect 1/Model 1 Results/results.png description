@@ -1,3 +1,15 @@
 Layout
-The first row shows the results of the model training and how it progressed with each iteration. \n 
-The second 
+- The first row shows the results of the model training and how it progressed with each iteration.
+- The second row shows results for model validation. 
+
+train/box_loss - Box loss; Measures how accurately predicted bounding boxes match actual object locations.
+train/cls_loss - Classification loss; Measures how well the model predicts the correct class label.
+train/dfl_loss - Distribution Focal Loss; Helps the model precisely predict box boundaries; lower value is better.
+metrics/precisicion(B) - Measures how often objects are classified correctly.
+metrics/recall(B) - Measures how many actual objects the model detected. 
+
+val/box_loss - Bounding box error on testing images. Measures how accurate the 
+val/cls_loss - See train description
+val/dfl_loss - See train description
+metrics/mAP50(B) - Mean Average Precision (mAP); prediction is counted as correct if there is at least 50% overlap between the trained and predicted values. 
+metrics/mAP50-95(B) - More precise mAP -- prediction is counted as correct if there is at least 95% overlap between the trained and predicted values
