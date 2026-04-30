@@ -16,7 +16,7 @@
 - **metrics/mAP50(B)**– Mean Average Precision at 50%. A prediction is considered correct if the predicted and actual bounding boxes overlap by at least 50%.
 - **metrics/mAP50-95(B)** – A stricter version of mAP measured across overlap thresholds from 50% to 95%. Higher values indicate more precise object localization and detection accuracy.
 
-##Other Graphs
+## Other Graphs
 - **Box FI** - Helps determine whether the model is balanced, whether it misses vegetation too often, and whether it creates too many false detections A smoother, higher F1 curve usually means better dataset quality, more stable training and better generalization.
 - **Box PR** - Precision-Recall curve for object detection. It shows the relationship between precision and recall at different confidence thresholds. A curve closer to the top-right corner indicates better overall detection performance.
 - **Box P** - Precision curve. Shows how precision changes as the confidence threshold changes. Higher precision means the model produces fewer false positive detections.
