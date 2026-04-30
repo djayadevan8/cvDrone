@@ -20,8 +20,8 @@
 - **Box FI** - Helps determine whether the model is balanced, whether it misses vegetation too often, and whether it creates too many false detections A smoother, higher F1 curve usually means better dataset quality, more stable training and better generalization.
 - **Box PR** - Precision-Recall curve for object detection. It shows the relationship between precision and recall at different confidence thresholds. A curve closer to the top-right corner indicates better overall detection performance.
 - **Box P** - Precision curve. Shows how precision changes as the confidence threshold changes. Higher precision means the model produces fewer false positive detections.
-- **Box R **- Recall curve. Shows how recall changes with different confidence thresholds. Higher recall means the model successfully detects more actual objects in the images.
-- **Confusion matrix **- A table that compares predicted classes with actual classes. It shows how often each vegetation category was correctly classified and where misclassifications occurred. Values along the diagonal represent correct predictions, while off-diagonal values represent classification errors between classes.
+- **Box R**- Recall curve. Shows how recall changes with different confidence thresholds. Higher recall means the model successfully detects more actual objects in the images.
+- **Confusion matrix**- A table that compares predicted classes with actual classes. It shows how often each vegetation category was correctly classified and where misclassifications occurred. Values along the diagonal represent correct predictions, while off-diagonal values represent classification errors between classes.
 
 ## Summary
 * Overall, we see significant improvements in box loss, classification loss and DFL loss, meaning that the model is able to accurately create bounding boxes on detected vegetation'
