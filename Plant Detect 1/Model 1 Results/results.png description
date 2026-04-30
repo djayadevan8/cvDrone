@@ -3,13 +3,18 @@ Layout
 - The second row shows results for model validation. 
 
 train/box_loss - Box loss; Measures how accurately predicted bounding boxes match actual object locations.
-train/cls_loss - Classification loss; Measures how well the model predicts the correct class label.
-train/dfl_loss - Distribution Focal Loss; Helps the model precisely predict box boundaries; lower value is better.
-metrics/precisicion(B) - Measures how often objects are classified correctly.
-metrics/recall(B) - Measures how many actual objects the model detected. 
+train/cls_loss - Classification loss; Measures how well the model predicts the correct class label. -->
+train/dfl_loss - Distribution Focal Loss; Helps the model precisely predict box boundaries; lower value is better. --> gradual improvement
+metrics/precisicion(B) - Measures how often objects are classified correctly. --> .7
+metrics/recall(B) - Measures how many actual objects the model detected. --> .2 - .7
 
-val/box_loss - Bounding box error on testing images. Measures how accurate the 
-val/cls_loss - See train description
-val/dfl_loss - See train description
+val/box_loss -  See train description --> around 1.55
+val/cls_loss - See train description --> noisy, then stabilizes
+val/dfl_loss - See train description --> noisy, then stabilizes
 metrics/mAP50(B) - Mean Average Precision (mAP); prediction is counted as correct if there is at least 50% overlap between the trained and predicted values. 
+--> 
 metrics/mAP50-95(B) - More precise mAP -- prediction is counted as correct if there is at least 95% overlap between the trained and predicted values
+
+
+Overall, we see significant improvements in box loss, classification loss and DFL loss, meaning that the model is able to accurately create bounding boxes on detected vegetation'
+The results for box, cls and dfl loss in the validation images are worse than in training. This can be improved with a larger dataset and maybe more cycles of training. 
