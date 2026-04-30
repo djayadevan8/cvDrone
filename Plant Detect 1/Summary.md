@@ -6,6 +6,7 @@
 More photos
 https://www.pexels.com/search/train%20tracks%20with%20vegetation/
 
+### About YOLO
 - YOLO --> High speed computer vision algorithm used to detect and classify objects in images and videos. 
 1. The algorithm divides an image into a grid. 
 2. Each grid cell acts simultaneously, predicting bounding boxes and class probabilities for objects, which allows for fast, end-to-end detection.
