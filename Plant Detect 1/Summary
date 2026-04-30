@@ -1,11 +1,11 @@
-Most information about the steps in the training process are found in the Train_YOLO_Models_mine file. This also contaisn a summary of any resulting graphs. 
+Most information about the steps in the training process are found in the Train_YOLO_Models_mine file.
 
 1. I labeled the dataset using Label Studio, following this tutorial -- https://youtu.be/r0RspiLG260. 
 - I labeled the train track region using 1 big bounding box. 
 - I labeled various vegetation levels -- no vegetation (just track photos), some vegetation, heavy vegetation. I included the track shape outline photos as well. 
 
 2. I trained the YOLO model using the code in the tutorial in step 1. Results are in the 'val_batch0_pred.jpg' file in the Model 1 Training and Prediction folder.
-- Graphs of testing metrics are in Model 1 Results --> results.png.  A summary/description of these is found in the Train_YOLO_Models_mine file. 
+- Graphs of testing metrics are in Model 1 Results --> results.png.  A summary/description of these is found in Model 1 Results --> Result Description 
 - The training/testing photos with bounding boxes applied are found in the Model 1 Training and Prediction folder. 
 
 3. I exported the trained YOLO model to my laptop (you can find it in (Plant Detect 1/Model 1). 
