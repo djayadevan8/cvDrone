@@ -3,20 +3,20 @@
 - The second row shows results for model validation. 
 
 ## Training Graph Descriptions
-train/box_loss - Box loss; Measures how accurately predicted bounding boxes match actual object locations.
-train/cls_loss - Classification loss; Measures how well the model predicts the correct class label. -->
-train/dfl_loss - Distribution Focal Loss; Helps the model precisely predict box boundaries; lower value is better. --> gradual improvement
-metrics/precisicion(B) - Measures how often objects are classified correctly. --> .7
-metrics/recall(B) - Measures how many actual objects the model detected. --> .2 - .7
+* train/box_loss - Box loss; Measures how accurately predicted bounding boxes match actual object locations.
+* train/cls_loss - Classification loss; Measures how well the model predicts the correct class label. -->
+* train/dfl_loss - Distribution Focal Loss; Helps the model precisely predict box boundaries; lower value is better. --> gradual improvement
+* metrics/precisicion(B) - Measures how often objects are classified correctly. --> .7
+* metrics/recall(B) - Measures how many actual objects the model detected. --> .2 - .7
 
 ## Testing Graph Descriptions
-val/box_loss -  See train description --> around 1.55
-val/cls_loss - See train description --> noisy, then stabilizes
-val/dfl_loss - See train description --> noisy, then stabilizes
-metrics/mAP50(B) - Mean Average Precision (mAP); prediction is counted as correct if there is at least 50% overlap between the trained and predicted values. 
-metrics/mAP50-95(B) - More precise mAP -- prediction is counted as correct if there is at least 95% overlap between the trained and predicted values
+* val/box_loss -  See train description --> around 1.55
+* val/cls_loss - See train description --> noisy, then stabilizes
+* val/dfl_loss - See train description --> noisy, then stabilizes
+* metrics/mAP50(B) - Mean Average Precision (mAP); prediction is counted as correct if there is at least 50% overlap between the trained and predicted values. 
+* metrics/mAP50-95(B) - More precise mAP -- prediction is counted as correct if there is at least 95% overlap between the trained and predicted values
 
 ## Summary
-Overall, we see significant improvements in box loss, classification loss and DFL loss, meaning that the model is able to accurately create bounding boxes on detected vegetation'
-The results for box, cls and dfl loss in the validation images are worse than in training. This can be improved with a larger dataset and maybe more cycles of training. 
+* Overall, we see significant improvements in box loss, classification loss and DFL loss, meaning that the model is able to accurately create bounding boxes on detected vegetation'
+* The results for box, cls and dfl loss in the validation images are worse than in training. This can be improved with a larger dataset and maybe more cycles of training. 
 
