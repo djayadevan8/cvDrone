@@ -7,7 +7,7 @@
 - **train/cls_loss** – Measures how accurately the model predicts the correct vegetation class labels. Lower values indicate improved classification accuracy.
 - **train/dfl_loss**– Distribution Focal Loss; helps the model more precisely predict bounding box boundaries. The gradual decrease shows improvement in localization accuracy over training.
 - **metrics/precision(B)** – Measures how often detected objects are classified correctly. Higher precision means fewer false detections. The model reaches values around 0.7.
--** metrics/recall(B)** – Measures how many actual objects in the images are successfully detected by the model. Recall improves from about 0.2 to 0.7 throughout training.
+- ** metrics/recall(B)** – Measures how many actual objects in the images are successfully detected by the model. Recall improves from about 0.2 to 0.7 throughout training.
 
 ## Testing Graph Descriptions
 - **val/box_loss** – Validation version of box loss. The final value stabilizes around 1.55, indicating moderate localization accuracy on unseen images.
