@@ -1,4 +1,8 @@
 Most information about the steps in the training process are found in the Train_YOLO_Models_mine file.
+YOLO --> High speed computer vision algorithm used to detect and classify objects in images and videos. 
+1. The algorithm divides an image into a grid. 
+2. Each grid cell acts simultaneously, predicting bounding boxes and class probabilities for objects, which allows for fast, end-to-end detection.
+- Deployment on drone needs a mobile computer/processor. Analysis of drone video footage externally/on laptop would not need any additional components. 
 
 1. I labeled the dataset using Label Studio, following this tutorial -- https://youtu.be/r0RspiLG260. 
 - I labeled the train track region using 1 big bounding box. 
