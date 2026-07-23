@@ -6,7 +6,9 @@ make px4_sitl gz_x500
 mavlink stop-all
 mavlink start -x -u 14550 (port) -t 172.20.112.1 (windows IP) to connect to mavlink
 
-2. Activate venv in Ubuntu terminal 2
+2. open QGC, should be connected
+
+3. Activate venv in Ubuntu terminal 2
 cd /home/dhiya
 source testend/bin/activate
 cd /mnt/d/Dhiya/DroneProjects
