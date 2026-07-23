@@ -13,3 +13,7 @@ cd /home/dhiya
 source testend/bin/activate
 cd /mnt/d/Dhiya/DroneProjects
 python3 filename
+
+
+
+* these files for takeoffSim worked using droneController takeoff2
