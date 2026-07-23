@@ -1,0 +1,13 @@
+
+1. Start px4 in Ubuntu terminal 1 (make px4_sitl gz_x500)
+su dhiya
+cd ~/PX4-Autopilot
+make px4_sitl gz_x500
+mavlink stop-all
+mavlink start -x -u 14550 (port) -t 172.20.112.1 (windows IP) to connect to mavlink
+
+2. Activate venv in Ubuntu terminal 2
+cd /home/dhiya
+source testend/bin/activate
+cd /mnt/d/Dhiya/DroneProjects
+python3 filename
